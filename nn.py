@@ -23,7 +23,7 @@ def gerar_campo_minado(dimensao, numero_minas):
 def enviar_solucao_campo_minado(dimensao, numero_minas):
     campo_minado = gerar_campo_minado(dimensao, numero_minas)
     chance_acerto = round(random.uniform(70, 99), 2)
-    mensagem = f"🟢 SINAL CONFIRMADO 🟢\n\nGian Mines 💎\n\n CLIQUE AQUI\n https://bit.ly/FORTUNEMINESVIP \n\n💣 Minas: 3\n⏱ Válido até: próximos 3 mins\n📊 Chance de acerto: {chance_acerto}%\n🔁 Nº de tentativas: 3\n\n"
+    mensagem = f"🟢 SINAL CONFIRMADO 🟢\n\nGian Mines 💎\n\n CLIQUE AQUI\n https://bit.ly/FORTUNEVIP \n\n💣 Minas: 3\n⏱ Válido até: próximos 3 mins\n📊 Chance de acerto: {chance_acerto}%\n🔁 Nº de tentativas: 3\n\n"
     for linha in campo_minado:
         mensagem += ' '.join(str(i) for i in linha) + '\n'
     bot.send_message(-1002112118428, mensagem)  # Substitua -100123456789 pelo ID do seu grupo
